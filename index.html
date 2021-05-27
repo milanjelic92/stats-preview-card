@@ -7,12 +7,12 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 
 
   <title>Frontend Mentor | Stats preview card component</title>
@@ -22,37 +22,51 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      color: #fff;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
-  <section class="grid-container">
 
-    <div class="grid-container-item">
+  <div class="container">
+    
+    <div class="main-text">
       <h1>Get <span>insights</span> that help your business grow.</h1>
-      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+      <p class="main-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue,
+        customer
         experience, and overall efficiency.</p>
-    <div class="item-stats">
-      <h3>10k+</h3>
-      <p>companies</p>
-      <h3>314</h3>
-      <p>templates</p>
-      <h3>12M+</h3>
-      <p>queries</p>
+      <ul class="stats">
+        <li><span>10k+</span>companies</li>
+        <li><span>314</span> templates</li>
+        <li><span>12M+</span> queries</li>
+      </ul>
+
+    </div>
+    
+    <div class="img">
+      <img src="./images/image-header-desktop.jpg" class="img-desktop" alt="">
+
+
+
     </div>
       
-    </div>
-    <div class="grid-container-item">
-      <img src="./images/image-header-desktop.jpg" alt="">
-    </div>
+  
+    
+
+   
 
 
-  </section>
+
+  </div>
+
+
+
 
 
 
